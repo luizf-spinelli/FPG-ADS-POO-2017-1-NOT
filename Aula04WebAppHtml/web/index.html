@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebApp: HTML Intro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>HTML Intro</h1>
+        <h2>Links</h2>
+        <a href="teste/teste.html">Teste</a>
+        <h2>Formulários</h2>
+        <fieldset>
+            <legend>Login</legend>
+            <form method="POST" action="resposta.html">
+                <table>
+                    <tr>
+                        <th style="text-align: right;">User</th>
+                        <td><input type="text" name="user"/></td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: right;">Password</th>
+                        <td><input type="password" name="pass"/></td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: right;"></th>
+                        <td><input type="submit" value="Entrar"/></td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Cadastro de Aluno</legend>
+            <form>
+                <b>Nome</b><br/>
+                <input type="text" name="name"/><br/>
+                <b>Data de Nascimento</b><br/>
+                <input type="date" name="birth"/><br/>
+                <b>Sexo</b><br/>
+                <input type="radio" name="sex" value="M"/>M
+                <input type="radio" name="sex" value="F"/>F<br/>
+                <b>Curso</b><br/>
+                <select name="course">
+                    <option></option>
+                    <option>ADS</option>
+                    <option>COMEX</option>
+                    <option>GE</option>
+                    <option>PQ</option>
+                </select><br/>
+                <b>Observações</b><br/>
+                <textarea name="obs" cols="50" rows="5"></textarea><br/>
+                <input type="submit" value="Cadastrar"/>
+            </form>
+        </fieldset>
+    </body>
+</html>
